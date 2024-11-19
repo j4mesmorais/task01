@@ -125,8 +125,8 @@ O **MVC** é um padrão arquitetural que separa a aplicação em três camadas p
    A View no projeto é representada pelas respostas JSON retornadas pela API, como listas de tarefas ou confirmações de operações.
    **Exemplo de resposta:**
 
-   ```javascript
-   jsonCopiar código[
+   ```json
+   [
      { "id": 1, "title": "Aprender JavaScript", "completed": 0 }
    ]
    ```
@@ -136,7 +136,7 @@ O **MVC** é um padrão arquitetural que separa a aplicação em três camadas p
    **Exemplo de método:**
 
    ```javascript
-   Copiar códigostatic async listTasks(req, res) {
+    static async listTasks(req, res) {
        TaskModel.getAll((err, tasks) => {
            if (err) {
                res.status(500).send("Erro ao buscar tarefas.");
