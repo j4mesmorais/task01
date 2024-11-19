@@ -8,7 +8,7 @@ Um gerenciador de tarefas simples, utilizando **Node.js**, **Express**, **SQLite
 
 1. Clone o repositório:  
    ```bash
-   git clone https://github.com/seu-usuario/task-manager.git
+   git clone https://github.com/j4mesmorais/task01.git
    cd task-manager
 
 2. Instale as dependências:
