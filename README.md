@@ -22,21 +22,17 @@ Um gerenciador de tarefas simples, utilizando **Node.js**, **Express**, **SQLite
 4. Teste as rotas:
 
 - Listar Tarefas (GET):
-
-	```http
-	http://localhost:3000/tasks
-
+	```bash
+	curl http://localhost:3000/tasks
+    
 - Criar Tarefa (POST):
-
-	Enviar JSON para http://localhost:3000/tasks:  
-
-	```json
-	{
-	"title": "Minha tarefa"
-	}
+	```bash
+	curl -X POST -H "Content-Type: application/json" -d '{"title": "Aprender JavaScript"}' http://localhost:3000/tasks
+    
 - Deletar Tarefa (DELETE):
-	```http
-	http://localhost:3000/tasks/:id
+	```bash
+	curl -X DELETE http://localhost:3000/tasks/1
+
 	
 ## ⚙️ **Estrutura do Projeto** 
 
